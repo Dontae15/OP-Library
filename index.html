@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="header">
+        <h1>library</h1>
+        <button id="add-book-btn">Add book</button>
+    </div>
+    
+    <div class="main-content">
+        <div class="library"></div>
+        <form id="book-form">
+          
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input id='title'type="text">
+        </div>
+        <div class="form-group">
+            <label for="author">Author:</label>
+            <input id="author" type="text">
+        </div>
+        <div class="form-group">
+            <label for="pages">Pages:</label>
+            <input id="pages" type="number">
+        </div>
+        <div class="form-group">
+            <label for="genre">Genre:</label>
+            <input id="genre" type="text">
+        </div>
+        <div class="form-group">
+            <label for="read-status">Read Status:</label>
+          <div class="radio-group">
+            <label for="read">Read</label>
+            <input   name='status' id='read' type="radio">
+            <label for="reading">Reading</label>
+            <input  name='status' id='reading' type="radio">
+            <label for="not-read">Not reading</label>
+            <input name='status' id="not-read" type="radio">
+          </div>
+        </div>
+            <button id="add-to-library-btn" type="button">Add to library</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
